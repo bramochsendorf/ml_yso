@@ -21,10 +21,9 @@ Since YSOs are likely located within molecular clouds, we add information on the
 
 http://www.stsci.edu/~kgordon/magclouds_results/gordon2014.html
 
-### Choice of algorithm, training data, and test data
+### Choice of algorithm, model selection, and model evaluation
 I start of with a binary classification using a SVM. For classification purposes, one can choose from a variety of learning algorithms. The SVM is a good choice with high-dimensional data (which the final training sample will be, as relevant features are added) and relatively small training samples, provided that a suitable softening parameter is chosen (through cross-validation).
 
-#### Model selection + evaluation
 To train the SVM, I use the spectroscopically classifed catalog from the SAGE-spec legacy program, containing ~800 sources (Jones et al. 2017, MNRAS, 470, 3). From this, 337 are YSOs in various stages or HII regions, which I group together as 'YSO'. All other classes are designated 'non-YSO' (see features_traindata.py). 
 
 I then split the data into a training and test sets (70%/30%), and perform model selection + evaluation using a grid search (changing the 'softening' parameter C) and 10-fold cross-validation. I use stratification to ensure the training and test sets remain well-balanced. This gives me a list models (with different parameter C) and respective performance estimates.

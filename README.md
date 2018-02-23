@@ -5,7 +5,7 @@ NB: this is work in progress. The repo will be updated along the way.
 This repo contains the results and analyses of a project that uses a Machine Learning algorithm (SVM) to classify objects as 'Young Stellar Objects' (YSOs) and separates it from known contaminants (background galaxies, planetary nebulae, AGB-stars, etc.) grouped together as 'non-YSOs'. 
 
 ## Why?
-Our upcoming JWST program will obtain a large amount of data with its MIRI and NIRCam instruments. Because of several time-critical aspects of our program, an automatic classification scheme is necessary to filter out sources-of-interests, which can then be followed-up with the NIRSpec multi-shutter array. 
+Our upcoming JWST program will obtain a large amount of data with its MIRI and NIRCam instruments. Because of several time-critical aspects of our program, an automatic classification scheme is necessary to filter out sources-of-interests, which will then be followed-up with the NIRSpec multi-shutter array. 
 
 ## Feature selection
 YSOs populate a specific area in color-magnitude and color-color space. Often the [4.5 - 8.0] and [8.0 - 24] color is used for classification (e.g., Whitney et al. 2008, AJ, 136, 18). However, there is no area color–magnitude space that can unambiguously separate YSOs from background contaminants (Gruendl et al. 2009, ApJS, 184, 172). Thus, additional features are needed.

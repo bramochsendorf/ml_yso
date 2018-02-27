@@ -10,7 +10,7 @@ Our upcoming GTO program with the James Webb Space Telescope will observe millio
 ## Conclusions
 A simple SVM classifier based on 4-dimensional data ([8.0] micron magnitude, [4.5 - 8.0] color, [8.0 - 24] color, and dust surface density) obtains excellent results. It uses a linear kernel, a 10-fold stratisfied cross-validation + grid search for model selection and evaluation, and reaches an average precision and recall of 0.94. The model also does an excellent job classifying objects that occupy the same area in color-color and color-magnitude space (i.e., 'confused' data) with an average accuracy and recall of 0.85. This means the feature based on dust surface density is very powerful in separating the classes.
 
-See the IPython Notebook svm.ipynb for the analysis and data exploration. Additional relevant features and kernels are currently being explored.
+See the IPython Notebook svm.ipynb for the full analysis and data exploration. Additional relevant features and kernels are currently being explored.
 
 ## Analysis
 

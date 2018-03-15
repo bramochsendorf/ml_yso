@@ -32,7 +32,7 @@ I then split the data into training and test sets (70%/30%), and perform model s
 
 To test the NB and SVM models, we take the best performing model and feed it the test data it hasn't seen yet. The models perform extremely well with a precision and recall of 0.92 and 0.94 for the NB and SVM models!
 
-### Extra 'stress-test' of the fully-trained model
+### Extra 'stress-test' of the model
 For a more challenging test, I use the source catalog from Gruendl et al. 2009, ApJS, 184, 172. This catalog contains thousands of objects of a variety of classes, occupying the same area in color space. How well does the model in separating out YSOs from a 'confused' color space? 
 
 The 'definite YSO' class from the Gruendl catalog is estimated to be ~99% correct (Jones et al. 2017, MNRAS, 470, 3), which I therfore label as 'YSO'. The other sources in this catalog (background galaxies, AGB stars, planetary nebula) are labelled as 'non-YSO'. The total length of the test data is ~2500 sources, splitted in ~850 YSOs and ~1650 non-YSOs (see features_testdata.py).

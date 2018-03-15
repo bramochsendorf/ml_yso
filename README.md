@@ -12,7 +12,7 @@ A simple binary classification based on 4-dimensional data ([8.0] micron magnitu
 
 It uses an RBF kernel (the data is linearly unseparable), a 10-fold stratisfied cross-validation + grid search for model selection and evaluation, and reaches an average precision and recall of 0.94. The model also does an excellent job classifying objects that occupy the same area in color-color and color-magnitude space (i.e., 'confused' data) with an average accuracy and recall of 0.85. This means the feature based on dust surface density is very powerful in separating the classes.
 
-See the IPython Notebook svm.ipynb for the full analysis and data exploration. Additional relevant features (clustering) and algorithms (e.g., Random Forest) are currently being explored and implemented.
+See the IPython Notebook svm.ipynb for the current version of the analysis + data exploration. Additional relevant features (clustering) and algorithms (e.g., Random Forest) are currently being explored and implemented.
 
 ## Analysis
 
